@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop form</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body class="m-sm-3 family">
+    <header class="text-center ">
+        <h1 class="card-title">Online shop</h1>
+        <p class="h6">Preencha o formulário abaixo para finalizar a sua compra</p>
+    </header>
+    <hr>
+
+    <form action="" method="get" class="fs-5">
+        <!--NOME COMPLETO-->
+        <div class="mt-sm-3"> 
+            <label for="name">Nome Completo:</label>
+            <input class="form-control" type="text" id="name" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <!--DATA DE NASCIMENTO-->
+        <div class="mt-sm-3">
+            <label for="born-date">Data de nascimento:</label>
+            <input class="form-control" type="date" name="bornDate" id="born-date" required placeholder="Informe sua data de nascimento">
+        </div>
+
+        <!--CPF-->
+        <div class="mt-sm-3">
+            <label for="CPF">CPF:</label>
+            <input class="form-control" type="text" name="" id="CPF" minlength="16" maxlength="16" required placeholder="Digite o número do seu CPF">
+        </div>
+
+        <!--ENDEREÇO-->
+        <div class="mt-sm-3">
+            <label for="location">Endereço:</label>
+            <input class="form-control" type="text" id="location" required placeholder="Digite o endereço de entrega">
+        </div>
+
+        <!--Número-->
+        <div class="mt-sm-3">
+            <label for="number-home">Número:</label>
+            <input class="form-control" type="text" id="number-home" required placeholder="N°">
+        </div>
+
+        <!--Ponto de referencia-->
+        <div class="mt-sm-3">
+            <label for="reference">Ponto de referencia (opcional):</label>
+            <input class="form-control" type="text" id="reference" placeholder="Digite um ou mais pontos de referência">
+        </div>
+
+        <!--INFORMAÇÕES DO CARTÃO-->
+        <div class="mt-sm-3">
+            <span><strong>Informações do cartão</strong></span>
+            <!--NOME NO CARTÃO-->
+            <div>
+                <label for="name-card">Nome no cartão:</label>
+                <input class="form-control" type="text" id="name-card" required placeholder="Digite o nome que está no cartão">
+            </div>
+
+            <!--NÚMERO DO CARTÃO-->
+            <div>
+                <label for="card-number">Número do cartão:</label>
+                <input class="form-control" type="text" name="" id="number-card" minlength="16" maxlength="16" placeholder="Digite o número do cartão">
+            </div>
+
+            <!--CÓDIGO DE SEGURANÇA-->
+            <div>
+                <label for="cvv">Código de segurança:</label>
+                <input class="form-control" type="text" name="" id="cvv" minlength="3" maxlength="3" placeholder="CVV">
+            </div>
+
+            <!--DATA DE VALIDADE DO CARTÃO-->
+            <div>
+                <label for="date-expiring">Validade do cartão:</label>
+                <input class="form-control" type="date" name="" id="date-expiring" required>
+            </div>
+        </div>
+
+        <!--ESTÁ COMPRA É UM PRESENTE-->
+        <div class="mt-sm-3">
+            <input type="checkbox" name="" id="check-gift">
+            <label class="" for="check-gift">Está compra é um presente</label>
+        </div>
+
+        <!--QUERO RECEBER MAIS NOTIFICAÇÕES-->
+        <div class="mt-sm-3">
+            <input type="checkbox" name="" id="checkNews">
+            <label class="" for="checkNews">Quero receber notificações com outras promoções e ofertas deste site!</label>
+        </div>
+
+        <!--Button-->
+        <div class="mt-sm-3">
+            <button class="btn btn-success" type="submit">Finalizar Compra</button>
+            <input class="btn btn-ligth " type="button" value="Voltar">
+        </div>
+    </form>
+
+    <footer class="text-center font-size">Criado em 07 de setembro de 2022</footer>
+    
+</body>
+</html>
